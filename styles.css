@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: gray;
+    min-width: 100vh;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+
+.items__text {
+    color: white;
+}
+
+.banner {
+    background-image: url("https://cdn.wallpapersafari.com/7/54/v7t0ST.jpg");
+    height: 500px;
+    background-size: auto;
+    background-position: center;
+    opacity: .8;
+}
+
+.texto{
+    color: white;
+    display: flex;
+    text-align: end;
+}
+
+.money{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 300px;
+    margin-left: 10px;
+}
+
+.ratings{
+    
+    font-size: 0.7rem;
+    margin-top: 319px;
+    margin-left: 8px;
+}
+
+.sinopsis{
+    font-size: 1rem;
+    text-align: justify;
+    position: relative;
+    right: 260px;
+    top: 350px
+}
+
+.iconos{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.play{
+    width: 200px;
+}
+
+.save{
+    width: 200px;
+    margin-left: -60px;
+    
+}
+
+.mayores{
+    color: white;
+    font-size: 1.5rem;
+    margin-left: -40px;
+    margin-top: 85px;
+}
+
+/*RECOMENDADO*/
+
+.recomendados{
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: 20px;
+    margin-left: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+.recomendado{
+    display: flex;
+    flex-direction: row;
+    display: inline-block;
+}
+
+.recomendado img {
+    width: 200px; 
+    height: 300px; 
+    display: inline-block; 
+    margin-right: 10px;
+    border-radius: 5px;
+    
+}
+
+.recommended{
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating label {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+    color: #ddd;
+}
+
+.rating label:hover,
+.rating input[type="radio"]:checked + label {
+    color: orange;
+}
+
+.guardar {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 30px;
+
+}
+
+.guardar i {
+    margin-right: 5px;
+}
+
+
+h1{
+    margin-top: 10px;
+}
+
+.trending{
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.trending img {
+    width: 200px; 
+    height: 300px; 
+    display: inline-block; 
+    margin-right: 10px;
+    border-radius: 5px;
+    
+}
+
+.trending-this-week{
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
